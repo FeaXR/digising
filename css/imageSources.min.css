@@ -1,0 +1,21 @@
+/*Starting backdrop*/
+.Background {
+    background-image: url('https://live.staticflickr.com/65535/49704231246_784f771053_c.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/*Main backdrop*/
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1546962339-5ff89552b8ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80');
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Portrait*/
+.profile {
+    content: url('https://live.staticflickr.com/65535/49703722873_6d1dcc9c2f_m.jpg')
+}

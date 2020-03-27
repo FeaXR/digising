@@ -1,0 +1,80 @@
+.view,
+body,
+html {
+  height: 100%;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.page-footer,
+.top-nav-collapse {
+  background-color: #212121;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #212121;
+  }
+}
+
+.Part {
+  align-content: center;
+  padding-top: 15%;
+}
+
+.FirstPart {
+  align-content: center;
+  padding-top: 5%;
+}
+
+.contacts {
+  align-items: center center;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  position: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.contact {
+    font-size: 80%;
+}
+
+
+.contact:link,
+.contact:visited {
+    color: white;
+    padding: 7px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.contact:hover {
+    background-color: #ffffffaa;
+    color: black;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.FlickrSlideshow {
+  padding-top: 20%;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+}

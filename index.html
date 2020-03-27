@@ -5,244 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name='viewport'
-          content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
     <title>HejjaCello</title>
-    <link rel="icon" href="img/icon.png" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <!-- Font Edwardian-->
-    <link href="//db.onlinewebfonts.com/c/4527bde76d8fc7aed09f15a9ebfb7a75?family=Edwardian+Script+ITC" rel="stylesheet" type="text/css" />
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.min.css" rel="stylesheet">
-    <!--Image links-->
-    <link href="css/imageSources.min.css" rel="stylesheet" />
-    <style type="text/css">
-        html {
-            scroll-behavior: smooth;
-        }
-
-        @media (min-width: 800px) and (max-width: 850px) {
-            .navbar:not(.top-nav-collapse) {
-                background: #1C2331 !important;
-            }
-        }
+    <link rel="icon" href="https://live.staticflickr.com/65535/49705898271_fb360b48fa_t.jpg" />   
     </style>
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-        <div class="container">
-
-            <!-- Brand -->
-            <a class="navbar-brand" href="">
-                <img style="width:20vh; max-width:80%;" src="img/HejjaCello.png" />
-            </a>
-
-            <!-- Collapse -->
-            <button class="navbar-toggler" id="navbartoggle" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Links -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Left -->
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
-                        <a class="nav-link" href="#introduction">About me</a>
-                    </li>
-                    <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
-                        <a class="nav-link" href="#Latest">Latest photos</a>
-                    </li>
-                    <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
-                        <a class="nav-link" href="#Carousel">Gallery</a>
-                    </li>
-                    <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
-                        <a class="nav-link" href="#Instruments">Instruments</a>
-                    </li>
-                    <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
-                        <a class="nav-link" href="#Contacts">Contacts</a>
-                    </li>
-                </ul>
-
-                <!-- Right -->
-                <ul class="navbar-nav nav-flex-icons">
-                    <li class="nav-item">
-                        <a href="https://www.facebook.com/hejja.cello" class="nav-link" target="_blank">
-                            <img style="height:10%; width:auto; max-height:3vh;  -webkit-filter: invert(1); filter: invert(1);"
-                                 src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMnB4Ij48cGF0aCBkPSJtMTUuOTk3IDMuOTg1aDIuMTkxdi0zLjgxNmMtLjM3OC0uMDUyLTEuNjc4LS4xNjktMy4xOTItLjE2OS0zLjE1OSAwLTUuMzIzIDEuOTg3LTUuMzIzIDUuNjM5djMuMzYxaC0zLjQ4NnY0LjI2NmgzLjQ4NnYxMC43MzRoNC4yNzR2LTEwLjczM2gzLjM0NWwuNTMxLTQuMjY2aC0zLjg3N3YtMi45MzljLjAwMS0xLjIzMy4zMzMtMi4wNzcgMi4wNTEtMi4wNzd6IiBmaWxsPSIjMDAwMDAwIi8+PC9zdmc+Cg==" />
-                        </a>
-                    </li>
-                    <li class="nav-item" style="align-content: center center;">
-                        <a href="https://www.messenger.com/t/hejja.cello" class="nav-link" target="_blank"
-                           rel="alternate">
-                            <img style="height:10%; width:auto; max-height:3vh;  -webkit-filter: invert(1); filter: invert(1);"
-                                 src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yNTYsMEMxMTQuNjI0LDAsMCwxMDYuMTEyLDAsMjM3LjAyNGMwLDc0LjU5MiwzNy4yMTYsMTQxLjEyLDk1LjM5MiwxODQuNTc2VjUxMmw4Ny4xNjgtNDcuODQgICAgYzIzLjI2NCw2LjQzMiw0Ny45MDQsOS45Miw3My40NCw5LjkyYzE0MS4zNzYsMCwyNTYtMTA2LjExMiwyNTYtMjM3LjAyNFMzOTcuMzc2LDAsMjU2LDB6IE0yODEuNDQsMzE5LjJsLTY1LjE4NC02OS41MzYgICAgTDg5LjA1NiwzMTkuMmwxMzkuOTM2LTE0OC41NDRsNjYuNzg0LDY5LjUzNmwxMjUuNi02OS41MzZMMjgxLjQ0LDMxOS4yeiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar -->
-    <!--Régi háttér: http://www.hejjacello.hu/introimg/intro.png-->
-    <!-- Full Page Intro -->
-    <div class="view Background" id="top">
-
-        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            <div class="text-center white-text mx-5 wow fadeIn">
-                <h1 class="mb-4">
-                    <strong>Héjja János</strong>
-                </h1>
-
-                <p class="mb-4">
-                    <strong>Cello specialist violinmaker based in Hungary</strong>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- Full Page Intro -->
-    <!--Main layout-->
-    <main>
-
-        <a class="anchor" id="introduction"></a>
-        <div class="container">
-            <section class="mt-5 wow fadeIn Part FirstPart">
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <img class="img-fluid z-depth-1-half profile" alt="" />
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <h3 class="h3 mb-3">About me</h3>
-                        <p>
-                            I am a violinmaker based in Hungary, specialised in cello making with more than 25 years of
-                            experience.
-                            You can find my instruments all around the world in major orchestras. My goal is to perfect
-                            my technique
-                            in cello making in every way possible to provide the highest quality masterpieces to my
-                            customers.
-                        </p>
-                        <p>
-                            Check out my works below.
-                        </p>
-                        <hr>
-                    </div>
-                </div>
-            </section>
-
-            <a id="Latest"></a>
-            <div style="text-align:center; position:relative; margin:0 auto; top:0px; left:0px; width:100%; height:auto; overflow:hidden;"
-                 class="Part">
-                <h3 class="h3 mb-3">Latest photos</h3>
-                <a align="center" data-flickr-embed="true"
-                   href="https://www.flickr.com/photos/155322859@N08/albums/72157713645229777" title="Cello">
-                    <img style="width:auto; height:auto; max-height:100%; max-width:100%;"
-                         src="https://live.staticflickr.com/65535/49704374442_110cc3cc5c_c.jpg" alt="Latest">
-                </a>
-                <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-            </div>
-
-            <a id="Carousel"></a>
-            <div style="text-align:center; position:relative; margin:0 auto; top:0px; left:0px; width:100%; height:auto; overflow:hidden;"
-                 class="Part">
-                <h3 class="h3 mb-3">Gallery</h3>
-                <a align="center" data-flickr-embed="true"
-                   href="https://www.flickr.com/photos/155322859@N08/albums/72157713642832901" title="Cello">
-                    <img style="width:auto; height:auto; max-height:100%; max-width:100%;"
-                         src="https://live.staticflickr.com/65535/49703447848_59861f1908_c.jpg" alt="Gallery">
-                </a>
-                <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-            </div>
-
-            <a id="Instruments"></a>
-            <div style="text-align:center; position:relative; margin:0 auto; top:0px; left:0px; width:100%; height:auto; overflow:hidden;"
-                 class="Part">
-                <h3 class="h3 mb-3">Instruments</h3>
-                <a align="center" data-flickr-embed="true"
-                   href="https://www.flickr.com/photos/155322859@N08/albums/72157713644275603" title="Cello">
-                    <img style="width:auto; height:auto; max-height:100%; max-width:100%;"
-                         src="https://live.staticflickr.com/65535/49704059231_66deea663b_c.jpg" alt="Instruments ">
-                </a>
-                <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-            </div>
-
-            <div align="center" class=" Part mt-5 wow fadeIn" id="Contacts">
-
-                <!--Grid column-->
-                <div class="contacts col-md-6 mb-4">
-                    <!-- Main heading -->
-                    <h3 class="h3 mb-3">Contacts</h3>
-                    <a class="contact" href="tel:+36307383645" target="_blank">+3630738345</a>
-                    <br />
-                    <a class="contact" href="mailto:info@hejjacello.hu" target="_blank">info@hejjacello.hu</a>
-                    <br />
-                    <a class="contact" href="https://www.facebook.com/hejja.cello" target="_blank">Facebook</a>
-                    <br />
-                    <a class="contact" href="https://goo.gl/maps/JC1sng6JBL5KretdA" target="_blank">
-                        HUNGARY, 2142 Nagytarcsa Bocskai
-                        utca 77.
-                    </a>
-                    <br />
-                    <a class="contact" href="https://goo.gl/maps/kwUJs2PbjnvL2eUY8" target="_blank">
-                        NETHERLANDS, 2525 NC Den Haag,
-                        Parallelweg 44.
-                    </a>
-                </div>
-                <!--Grid column-->
-            </div>
-        </div>
-    </main>
-    <!--Main layout-->
-    <!--Footer-->
-    <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-        <hr class="my-4">
-
-        <!-- Social icons -->
-        <div class="pb-4">
-            <a href="https://www.facebook.com/hejja.cello" target="_blank" rel="alternate">
-                <img style="height:10%; width:auto; max-height:3vh;  -webkit-filter: invert(1); filter: invert(1);"
-                     src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMnB4Ij48cGF0aCBkPSJtMTUuOTk3IDMuOTg1aDIuMTkxdi0zLjgxNmMtLjM3OC0uMDUyLTEuNjc4LS4xNjktMy4xOTItLjE2OS0zLjE1OSAwLTUuMzIzIDEuOTg3LTUuMzIzIDUuNjM5djMuMzYxaC0zLjQ4NnY0LjI2NmgzLjQ4NnYxMC43MzRoNC4yNzR2LTEwLjczM2gzLjM0NWwuNTMxLTQuMjY2aC0zLjg3N3YtMi45MzljLjAwMS0xLjIzMy4zMzMtMi4wNzcgMi4wNTEtMi4wNzd6IiBmaWxsPSIjMDAwMDAwIi8+PC9zdmc+Cg==" />
-            </a>
-            <a href="https://www.messenger.com/t/hejja.cello" target="_blank" rel="alternate">
-                <img style="height:10%; width:auto; max-height:3vh;  -webkit-filter: invert(1); filter: invert(1);"
-                     src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yNTYsMEMxMTQuNjI0LDAsMCwxMDYuMTEyLDAsMjM3LjAyNGMwLDc0LjU5MiwzNy4yMTYsMTQxLjEyLDk1LjM5MiwxODQuNTc2VjUxMmw4Ny4xNjgtNDcuODQgICAgYzIzLjI2NCw2LjQzMiw0Ny45MDQsOS45Miw3My40NCw5LjkyYzE0MS4zNzYsMCwyNTYtMTA2LjExMiwyNTYtMjM3LjAyNFMzOTcuMzc2LDAsMjU2LDB6IE0yODEuNDQsMzE5LjJsLTY1LjE4NC02OS41MzYgICAgTDg5LjA1NiwzMTkuMmwxMzkuOTM2LTE0OC41NDRsNjYuNzg0LDY5LjUzNmwxMjUuNi02OS41MzZMMjgxLjQ0LDMxOS4yeiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-            </a>
-        </div>
-        <!-- Social icons -->
-        <!--Copyright-->
-        <div class="footer-copyright py-3">
-            © 2019 Copyright:<a href="">HejjaCello.hu</a>
-        </div>
-        <!--/.Copyright-->
-
-    </footer>
-    <!--/.Footer-->
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Initializations -->
     <script type="text/javascript">
-        // Animations initialization
-        new WOW().init();
-    </script>
+        function load() {
+            
+            if(localStorage.getItem("language").includes("en")){
+                window.location.href = "en/index.html";
+            }
+            else
+            {
+                window.location.href = "hu/index.html";
+            }
+        }
+        </script>        
+        <body onload="load()">
 </body>
 </html>

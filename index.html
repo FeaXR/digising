@@ -15,8 +15,7 @@
 
     <script type="text/javascript">
         function load() {
-            
-            if(localStorage.getItem("language").includes("en") || localStorage.getItem("language") == null){
+            if(localStorage.getItem("language").includes("en") || localStorage.getItem("language") === null){
                 window.location.href = "en/index.html";
             }
             else

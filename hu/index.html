@@ -2,6 +2,20 @@
 <html lang="en">
 
 <head>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3061714-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-3061714-1');
+    </script>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -32,6 +46,7 @@
             }
         }
     </style>
+
 </head>
 
 <body>
@@ -58,22 +73,22 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <a class="nav-link" href="#">Kezdőlap</a>
+                        <a class="nav-link" href="#" id="home">Kezdőlap</a>
                     </li>
                     <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
-                        <a class="nav-link" href="#introduction">Rólam</a>
+                        <a class="nav-link" href="#introduction" id="aboutme">Rólam</a>
                     </li>
                     <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
-                        <a class="nav-link" href="#Latest">Legutóbbi képek</a>
+                        <a class="nav-link" href="#Latest" id="last">Legutóbbi képek</a>
                     </li>
                     <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
-                        <a class="nav-link" href="#Carousel">Galéria</a>
+                        <a class="nav-link" href="#Carousel" id="gallery">Galéria</a>
                     </li>
                     <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
-                        <a class="nav-link" href="#Instruments">Hangszerek</a>
+                        <a class="nav-link" href="#Instruments" id="instruments">Hangszerek</a>
                     </li>
                     <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
-                        <a class="nav-link" href="#Contacts">Kapcsolat</a>
+                        <a class="nav-link" href="#Contacts" id="contacts">Kapcsolat</a>
                     </li>
                 </ul>
 
@@ -119,11 +134,11 @@
         <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
 
             <div class="text-center white-text mx-5 wow fadeIn">
-                <h1 class="mb-4">
+                <h1 class="mb-4" style="font-family:Edwardian Script ITC;">
                     <strong>Héjja János</strong>
                 </h1>
 
-                <p class="mb-4">
+                <p class="mb-4" id="firstdescription">
                     <strong>Csellóra specializálódott hangszerkészítő</strong>
                 </p>
             </div>
@@ -140,22 +155,22 @@
                         <img class="img-fluid z-depth-1-half profile" alt="" />
                     </div>
                     <div class="col-md-6 mb-4">
-                        <h3 class="h3 mb-3">Rólam</h3>
-                        <p>
+                        <h3 class="h3 mb-3" id="aboutmepart">Rólam</h3>
+                        <p id="introductiontext">
                             Magyarországon élő hangszerkészítő vagyok, bemutatkozás, satöbbi, satöbbi.
                         </p>
-                        <p>
+                        <p id="intro-end">
                             Valami.
                         </p>
                         <hr>
                     </div>
                 </div>
             </section>
-            
+
             <div id="Pictures">
                 <a id="Latest"></a>
                 <div style="margin-top: 25vh" class="Part">
-                    <h3 class="h3 mb-3">Legutóbbi képek</h3>
+                    <h3 class="h3 mb-3" id="lastphotopart">Legutóbbi képek</h3>
                     <iframe
                         src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157713645229777&sort=0&by=album&theme=default&scale=fit&speed=3000&limit=25&skin=default&autoplay=true"
                         scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true"
@@ -179,7 +194,7 @@
 
                 <a id="Carousel"></a>
                 <div class="Part">
-                    <h3 class="h3 mb-3">Galéria</h3>
+                    <h3 class="h3 mb-3" id="gallerypart">Galéria</h3>
                     <iframe
                         src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157713642832901&sort=0&by=album&theme=default&scale=fit&speed=3000&limit=25&skin=default&autoplay=true"
                         scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true"
@@ -203,7 +218,7 @@
 
                 <a id="Instruments"></a>
                 <div class="Part">
-                    <h3 class="h3 mb-3">Hangszerek</h3>
+                    <h3 class="h3 mb-3" id="instrumentspart">Hangszerek</h3>
                     <iframe
                         src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157713644275603&sort=0&by=album&theme=default&scale=fit&speed=3000&limit=25&skin=default&autoplay=true"
                         scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true"
@@ -231,7 +246,7 @@
                 <!--Grid column-->
                 <div class="contacts col-md-6 mb-4" style="text-align: center;">
                     <!-- Main heading -->
-                    <h3 class="h3 mb-3">Kapcsolat</h3>
+                    <h3 class="h3 mb-3" id="contactspart">Kapcsolat</h3>
                     <a class="contact" href="tel:+36307383645" target="_blank">+3630738345</a>
                     <br />
                     <a class="contact" href="mailto:info@hejjacello.hu" target="_blank">info@hejjacello.hu</a>
@@ -291,6 +306,26 @@
     <script type="text/javascript">
         // Animations initialization
         new WOW().init();
+    </script>
+
+    <script>
+        $.getJSON('language.json', function (data) {
+            document.getElementById('firstdescription').innerHTML = data.firstdescription;
+            document.getElementById('introductiontext').innerHTML = data.introduction;
+            document.getElementById('intro-end').innerHTML = data.introend;
+            document.getElementById('last').innerHTML = data.lastpic;
+            document.getElementById('home').innerHTML = data.home;
+            document.getElementById('aboutme').innerHTML = data.aboutme;
+            document.getElementById('gallery').innerHTML = data.gallery;
+            document.getElementById('instruments').innerHTML = data.instruments;
+            document.getElementById('contacts').innerHTML = data.contacts;
+
+            document.getElementById('lastphotopart').innerHTML = data.lastpic;
+            document.getElementById('aboutmepart').innerHTML = data.aboutme;
+            document.getElementById('gallerypart').innerHTML = data.gallery;
+            document.getElementById('instrumentspart').innerHTML = data.instruments;
+            document.getElementById('contactspart').innerHTML = data.contacts;
+        })
     </script>
 
     <script type="text/javascript">

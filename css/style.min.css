@@ -80,13 +80,14 @@ iframe {
   max-height: 100%;
 }
 
+.nameimage {
+  
+}
+
 @media (min-width: 768px) {
   .navbar-collapse {
     display: block;
     height: auto !important;
     visibility: visible;
-  }
-  .Part {
-    padding-top: 0% !important;
   }
 }

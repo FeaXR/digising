@@ -20,8 +20,8 @@ html {
 }
 
 .Part {
+  text-align: center;
   align-content: center;
-  padding-top: 3vh;
 }
 
 .FirstPart {
@@ -41,23 +41,22 @@ html {
 }
 
 .contact {
-    font-size: 80%;
+  font-size: 80%;
 }
-
 
 .contact:link,
 .contact:visited {
-    color: white;
-    padding: 7px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
+  color: white;
+  padding: 7px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
 }
 
 .contact:hover {
-    background-color: #ffffffaa;
-    color: black;
+  background-color: #ffffffaa;
+  color: black;
 }
 
 .anchor {
@@ -71,15 +70,14 @@ html {
   padding-top: 20%;
 }
 
-
 iframe {
-  position: absolute;
+  position: relative;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
+  height: 50vw;
+  max-height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -87,5 +85,8 @@ iframe {
     display: block;
     height: auto !important;
     visibility: visible;
+  }
+  .Part {
+    padding-top: 0% !important;
   }
 }

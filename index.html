@@ -1,25 +1,24 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 
-<body>
-    <p id="loc"></p>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <title>HejjaCello</title>
+    <link rel="icon" href="https://live.staticflickr.com/65535/49705898271_fb360b48fa_t.jpg" />
+    </style>
+</head>
 
-
+<body onload="load()">
     <script type="text/javascript">
-        var a = document.getElementById("loc");
-
-        function jsonpCallback(data) {
-            a.innerHTML = "Latitude: " + data.latitude +
-                "<br/>Longitude: " + data.longitude +
-                "<br/>Country: " + data.address.country;
-            if(data.address.country == "Hungary")
-            {              
-                window.location.href = "http://127.0.0.1/HejjaCello/hu/index.html";
-           
+        function load() {
+            if (localStorage.getItem("language") === null || localStorage.getItem("language").includes("hu")) {
+                window.location.href = "hu/index.html";
+            } else {
+                window.location.href = "en/index.html";
             }
-
         }
     </script>
-    <script src="http://api.wipmania.com/jsonp?callback=jsonpCallback" type="text/javascript"></script>
-</body>
-
 </html>

@@ -21,7 +21,7 @@ html {
 
 .Part {
   align-content: center;
-  padding-top: 15%;
+  padding-top: 3vh;
 }
 
 .FirstPart {
@@ -63,12 +63,23 @@ html {
 .anchor {
   display: block;
   position: relative;
-  top: -100px;
+  top: -10vh;
   visibility: hidden;
 }
 
 .FlickrSlideshow {
   padding-top: 20%;
+}
+
+
+iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }
 
 @media (min-width: 768px) {

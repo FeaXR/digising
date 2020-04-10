@@ -313,7 +313,7 @@
             lang = "hu";
         } else {
             var xhr = new XMLHttpRequest();
-            xhr.open('HEAD', lang + ".json", false);
+            xhr.open('HEAD', lang + ".json", true);
             xhr.send();
 
             if (xhr.status == "404") {

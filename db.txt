@@ -1,5 +1,0 @@
-localhost
-root
-
-webshop
-My Webshop

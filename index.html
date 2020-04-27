@@ -5,8 +5,9 @@
 </head>
 
 <body onload="change()" style="align-content: center; text-align: center;">
+    <h2>Beéneklés</h2>
     <audio id="audio" controls="controls" onloadeddata="alertState()">
-        <source src="audio/Zümi.mp3" type="audio/mpeg" />
+        <source src="audio/beenekles/Zümi.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
     </audio>
     <br>
@@ -39,19 +40,40 @@
     <br>
     <br>
     <br>
+    <h2>Kamara</h2>
+    <audio id="audioKamara" controls="controls" onloadeddata="alertStateKamara()">
+        <source src="audio/kamara/That lonesome road.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+    </audio>
+    <br>
+    <label for="selectSongKamara">Darab: </label>
+    <select id="selectSongKamara" onchange="changeKamara()" style="margin-top: 50px;">
+        <option value="Love me tender - sopran alto" selected="selected">Love me tender - sopran alto</option>
+        <option value="Love me tender - tenor bass">Love me tender - tenor bass</option>
+        <option value="Love me tender">Love me tender</option>
+        <option value="That lonesome road - alto">That lonesome road - alto</option>
+        <option value="That lonesome road - soprano">That lonesome road - soprano</option>
+        <option value="That lonesome road - tenor">That lonesome road - tenor</option>
+        <option value="That lonesome road">That lonesome road</option>
+    </select>
+
+    <br>
+    <br>
+    <br>
+    <h2>Egyéb:</h2>
     <a href="https://www.speedtest.net/">Internet sebesség mérés</a>
     <br>
     <br>
     <br>
-    <p>Ha laptopon beszéltek, érdemes lehet ezt a programot használni:</p>
+    <p>Ha laptopon beszéltek, érdemes lehet ezt a programot használni mert a zajokat szépen kiszűri:</p>
     <a href="https://developer.nvidia.com/rtx/broadcast_engine/secure/NVIDIA_RTX_Voice.exe">Nvidia RTX VOICE</a>
-    <p>A telepítés kicsit bonyolultabb, itt van róla egy videó:</p>
+    <p>A telepítés kicsit bonyolultabb, ezért itt van róla egy videó:</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/2gCKOzOxMxU" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <script>
         function change() {
             var myAudio = document.getElementById("audio");
-            var song = "audio/" + document.getElementById("selectSong").value;
+            var song = "audio/beenekles/" + document.getElementById("selectSong").value;
             var height = document.getElementById("magassag").value;
             if (height != "normal") {
                 song = song + " " + height;
@@ -68,6 +90,24 @@
         }
 
         function alertState() {
+            var myAudio = document.getElementById("audio");
+        }
+
+        function changeKamara() {
+            var myAudio = document.getElementById("audioKamara");
+            var song = "audio/kamara/" + document.getElementById("selectSongKamara").value;
+            song = song + ".mp3"
+            myAudio.setAttribute('src', song);
+            setTimeout(() => {
+
+                if (myAudio.readyState == 0) {
+                    alert("Bocsi, ilyen darab nem létezik!");
+                }
+            }, 1500);
+
+        }
+
+        function alertStateKamara() {
             var myAudio = document.getElementById("audio");
         }
     </script>

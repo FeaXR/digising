@@ -37,7 +37,7 @@
         <option value="normal" selected="selected">Normál</option>
         <option value="magas">Magas</option>
     </select>
-    <br>
+    <!-- <br>
     <br>
     <br>
     <h2>Kamara</h2>
@@ -59,9 +59,10 @@
 
     <br>
     <br>
-    <br>
+    <br>-->
     <h2>Egyéb:</h2>
     <a href="https://www.speedtest.net/">Internet sebesség mérés</a>
+    <!-- 
     <br>
     <br>
     <br>
@@ -69,7 +70,7 @@
     <a href="https://developer.nvidia.com/rtx/broadcast_engine/secure/NVIDIA_RTX_Voice.exe">Nvidia RTX VOICE</a>
     <p>A telepítés kicsit bonyolultabb, ezért itt van róla egy videó:</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/2gCKOzOxMxU" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
     <script>
         function change() {
             var myAudio = document.getElementById("audio");
@@ -93,23 +94,23 @@
             var myAudio = document.getElementById("audio");
         }
 
-        function changeKamara() {
-            var myAudio = document.getElementById("audioKamara");
-            var song = "audio/kamara/" + document.getElementById("selectSongKamara").value;
-            song = song + ".mp3"
-            myAudio.setAttribute('src', song);
-            setTimeout(() => {
+        // function changeKamara() {
+        //     var myAudio = document.getElementById("audioKamara");
+        //     var song = "audio/kamara/" + document.getElementById("selectSongKamara").value;
+        //     song = song + ".mp3"
+        //     myAudio.setAttribute('src', song);
+        //     setTimeout(() => {
 
-                if (myAudio.readyState == 0) {
-                    alert("Bocsi, ilyen darab nem létezik!");
-                }
-            }, 1500);
+        //         if (myAudio.readyState == 0) {
+        //             alert("Bocsi, ilyen darab nem létezik!");
+        //         }
+        //     }, 1500);
 
-        }
+        // }
 
-        function alertStateKamara() {
-            var myAudio = document.getElementById("audio");
-        }
+        // function alertStateKamara() {
+        //     var myAudio = document.getElementById("audio");
+        // }
     </script>
 </body>
 
